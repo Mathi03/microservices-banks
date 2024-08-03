@@ -2,7 +2,7 @@ server:
   port: 8093
 spring:
   application:
-    name: bank-service-peru
+    name: bank-service-argentina
   datasource:
     url: jdbc:mysql://localhost/bank_argentina_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
     username: root
