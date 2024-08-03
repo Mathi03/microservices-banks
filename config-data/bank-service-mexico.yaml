@@ -1,0 +1,25 @@
+server:
+  port: 8092
+spring:
+  application:
+    name: bank-service-mexico
+  datasource:
+    url: jdbc:mysql://localhost/bank_mexico_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+application:
+  code: MEX
+  servers:
+    peru: http://localhost:8091/api/
+    mexico: http://localhost:8092/api/
+    argentina: http://localhost:8093/api/
+  frontend: http://localhost:5173
+logging:
+  pattern:
+    dateformat: hh:mm
