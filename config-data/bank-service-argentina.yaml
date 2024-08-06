@@ -15,10 +15,6 @@ spring:
     database-platform: org.hibernate.dialect.MySQL8Dialect
 application:
   code: ARG
-  servers:
-    peru: http://localhost:8091/api/
-    mexico: http://localhost:8092/api/
-    argentina: http://localhost:8093/api/
   frontend: http://localhost:5173
 logging:
   pattern:
