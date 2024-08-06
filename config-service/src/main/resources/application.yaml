@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          default-label: config-server
+          uri: https://github.com/Mathi03/microservices-banks
+          search-paths: config-data
+server:
+  port: 8081
